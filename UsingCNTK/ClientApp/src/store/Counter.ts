@@ -26,7 +26,7 @@ export const actionCreators = {
 };
 
 // ----------------
-// REDUCER - Par una accion y estado , retornan un nuevo estado  no deberian utar el estado antiguo
+// REDUCER - Para una accion y estado , retornan un nuevo estado  no deberian mutar el estado antiguo
 
 export const reducer: Reducer<CounterState> = (state: CounterState | undefined, incomingAction: Action): CounterState => { //una fx que recive un estado definido por usuario, y regresa un estado
     if (state === undefined) {
